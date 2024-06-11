@@ -8,13 +8,17 @@
         .container{
             border: 1px solid red;
             display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px ;
         }
         .box{
             background-color: yellow;
             border: 1px solid black;
+            display: flex;
         }
-        .box3{
-            position: relative; 
+        .box6{
+            grid-area: 1/2/4/4;
+            background-color: black; 
         }
     </style>
 </head>
@@ -25,6 +29,13 @@
         <div class="box box3">3
         </div>
         <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+        <div class="box box11">11</div>
     </div>
 </body>
 </html>
