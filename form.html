@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: darkblue;
+            padding: 100px;
+        }
+
+        table {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2" cellspacing="0" cellpadding="3" align="center">
+        <form>
+            <tr>
+                <th colspan="2">Student Registration Form</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Father Name</td>
+                <td><input type="text" name="father-name" /></td>
+            </tr>
+            <tr>
+                <td>Postal Address</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>Personal Address</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="gender" value="male" /> Male
+                    <input type="radio" name="gender" value="female" /> Female
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>
+                    <select name="city">
+                        <option value="select">Select a city</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td>
+                    <select name="course">
+                        <option value="select">Select a course</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>District</td>
+                <td>
+                    <select name="district">
+                        <option value="select">Select a district</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td>
+                    <select name="state">
+                        <option value="select">Select a state</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text" name="pincode" /></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" name="dob" /></td>
+            </tr>
+            <tr>
+                <td>Mobile No</td>
+                <td><input type="tel" name="mobile" /></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset" /></td>
+                <td> <input type="submit" value="Submit Form" /></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
