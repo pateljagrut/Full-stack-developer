@@ -5,8 +5,7 @@
     <title>Student Registration Form</title>
     <style>
         body {
-            background-color: darkblue;
-            padding: 100px;
+            padding-top: 10px;
         }
 
         table {
@@ -23,31 +22,31 @@
             </tr>
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="name" /></td>
+                <td><input type="text" name="name" id="name1" /></td>
             </tr>
             <tr>
                 <td>Father Name</td>
-                <td><input type="text" name="father-name" /></td>
+                <td><input type="text" name="father-name" id="Fname" /></td>
             </tr>
             <tr>
                 <td>Postal Address</td>
-                <td><textarea></textarea></td>
+                <td><textarea id="postal"></textarea></td>
             </tr>
             <tr>
                 <td>Personal Address</td>
-                <td><textarea></textarea></td>
+                <td><textarea id="personal"></textarea></td>
             </tr>
             <tr>
                 <td>Sex</td>
                 <td>
-                    <input type="radio" name="gender" value="male" /> Male
-                    <input type="radio" name="gender" value="female" /> Female
+                    <input type="radio" name="gender" value="male" id="mgen" /> Male
+                    <input type="radio" name="gender" value="female" id="mgen" /> Female
                 </td>
             </tr>
             <tr>
                 <td>City</td>
                 <td>
-                    <select name="city">
+                    <select name="city" id="city">
                         <option value="select">Select a city</option>
                     </select>
                 </td>
@@ -55,7 +54,7 @@
             <tr>
                 <td>Course</td>
                 <td>
-                    <select name="course">
+                    <select name="course" id="course">
                         <option value="select">Select a course</option>
                     </select>
                 </td>
@@ -63,7 +62,7 @@
             <tr>
                 <td>District</td>
                 <td>
-                    <select name="district">
+                    <select name="district" id="district">
                         <option value="select">Select a district</option>
                     </select>
                 </td>
@@ -71,33 +70,48 @@
             <tr>
                 <td>State</td>
                 <td>
-                    <select name="state">
+                    <select name="state" id="state">
                         <option value="select">Select a state</option>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>Pin Code</td>
-                <td><input type="text" name="pincode" /></td>
+                <td><input type="text" name="pincode" id="pincode" /></td>
             </tr>
             <tr>
                 <td>Email ID</td>
-                <td><input type="email" name="email" /></td>
+                <td><input type="email" name="email" id="email" /></td>
             </tr>
             <tr>
                 <td>DOB</td>
-                <td><input type="date" name="dob" /></td>
+                <td><input type="date" name="dob" id="dob" /></td>
             </tr>
             <tr>
                 <td>Mobile No</td>
-                <td><input type="tel" name="mobile" /></td>
+                <td><input type="tel" name="mobile" id="mob" /></td>
             </tr>
             <tr>
-                <td><input type="reset" value="Reset" /></td>
-                <td> <input type="submit" value="Submit Form" /></td>
+                <td><input type="reset" value="Reset" id="resert" /></td>
+                <td> <input type="submit" value="Submit Form" id="submit" /></td>
             </tr>
         </form>
     </table>
+    <script>
+        let name2 = document.getElementById('name1').value;
+        let fnam = document.getElementById('Fname').value;
+        let po = document.getElementById('postal').value;
+        let per = document.getElementById('personal').value;
+        let gen = document.getElementById('mgen').value;
+        let cty = document.getElementById('city').value;
+        let cor = document.getElementById('course').value;
+        let sta = document.getElementById('state').value;
+        let pin = document.getElementById('pincode').value;
+        let eml = document.getElementById('email').value;
+        let dob = document.getElementById('dob').value;
+        let mob = document.getElementById('mob').value;
+        console.log("Data", name2);
+    </script>
 </body>
 
 </html>

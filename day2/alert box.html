@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+    <style>
+        div.d1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<div class="d1" id="d1">
+
+</div>
+    <input type="button" id="btn" onclick="addItem()" value="click me">
+    <div id="id1"></div>
+    <script>
+        console.time("time taken");
+        var myvariable = "Jagrut";
+        console.log(myvariable);
+        /*let myvariable="Hello World";
+        {
+            var myvariable1='bye';
+            console.log(myvariable1);
+        }
+        console.log(myvariable);
+        console.log("This is Log.");
+        console.error("This is error Message.");
+        console.warn("This is Waring.");
+        console.clear();
+        console.assert();
+        console.table([1,2,3,4,5]);
+        console.timeEnd("time taken");
+        let promptvaule=prompt('Enter Number');
+        alert(promptvaule);
+        console.log(promptvaule);
+        let x=2;
+        let y='6';
+        let z=x**y;
+        console.log(z);
+        console.log('$(x)+$[y]=',x+y);
+        console.log(z==y);
+        console.log(z||x);
+        console.log(x>z<y);
+        console.log(z==x);*/
+        for (let index = 0; index < 10; index++) {
+            let mystring = 'Hello World';
+            console.count(mystring);
+        }
+        document.write("Hello World");
+        let elem = document.getElementById("id1");
+        let btn = document.getElementById("btn");
+        let di = document.getElementById("d1");
+        elem.style.backgroundColor = 'red';
+        function addItem() {
+            elem.innerHTML += "<h1>This is H1 tag.</h1>"
+        }
+        button.addeventlistener('click', addItem);
+    </script>
+</body>
+
+</html>
