@@ -2,13 +2,19 @@
 import './App.css'
 // import User from './Components/User'
 // import Use from './Components/Useeffect'
-import Global from './Components/Global'
+// import Global from './Components/Global'
+// import App1 from './Components/about'
+// import Contact from './Components/contact'
+import Approuter from './Components/Routerdom'
 function App() {
 
   return (
     <>
       {/* <User/> */}
-      <Global/>
+      {/* <App1/>
+      <Contact/>
+      <Global/> */}
+      <Approuter/>
     </>
   )
 }
